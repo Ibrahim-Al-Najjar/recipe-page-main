@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Outfit;
+  src: url("/assets/fonts/outfit/static/Outfit-Regular.ttf");
+}
+
+@font-face {
+  font-family: YoungSerif;
+  src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}

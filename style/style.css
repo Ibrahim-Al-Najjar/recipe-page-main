@@ -1,10 +1,104 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Outfit;
 }
 
 html,
 body {
   width: 100vw;
   height: 100vh;
+  background-color: #f3e5d8;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 30px;
+}
+
+.head-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Recipe-Details h1 {
+  font-family: YoungSerif;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.Recipe-Details p {
+  color: grey;
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.Recipe-Prepare-Info {
+  background-color: #fff7fc;
+  width: 97%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.Recipe-Prepare-Info p {
+  color: #963864;
+  font-weight: bold;
+}
+
+.Recipe-Prepare-Info {
+  color: grey;
+}
+
+ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.Recipe-Prepare-Info li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #963864;
+  font-size: 15px;
+}
+
+.Ingredients {
+  margin-top: 20px;
+}
+
+.Ingredients h4 {
+  font-family: YoungSerif;
+  color: #9e4e3c;
+  font-weight: 550;
+}
+.Ingredients li {
+  font-size: 11px;
+  color: grey;
+}
+.Ingredients li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #9e4e3c;
+  font-size: 15px;
+}
+
+hr {
+  width: 100%;
+  margin-block: 20px;
+  background-color: rgb(223, 223, 223);
+  border: none;
+  height: 1px;
 }
