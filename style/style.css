@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Outfit;
 }
 
 html,
 body {
+  font-family: Outfit;
   width: 100vw;
   height: 100vh;
   background-color: #f3e5d8;
@@ -24,9 +24,6 @@ body {
   border-radius: 10px;
   background-color: white;
   width: 450px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
   padding: 30px;
 }
 
@@ -39,7 +36,10 @@ body {
   font-family: YoungSerif;
   font-weight: 100;
   margin-top: 20px;
+  color: #41403d;
+  line-height: 30px;
 }
+
 p {
   color: grey;
   font-size: 11px;
@@ -49,34 +49,36 @@ p {
 
 .Recipe-Prepare-Info {
   background-color: #fff7fc;
-  width: 97%;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
   font-size: 12px;
 }
 
 .Recipe-Prepare-Info p {
   color: #963864;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .Recipe-Prepare-Info {
   color: grey;
 }
+
 strong {
   color: #706a64;
 }
-ul {
-  margin-top: 10px;
-  list-style: none;
+
+.Recipe-Prepare-Info li {
+  margin-block: 7px;
+  margin-left: 20px;
+  color: #963864;
+  font-size: 16px;
 }
 
-.Recipe-Prepare-Info li::before {
-  content: "•";
-  margin-right: 10px;
-  color: #963864;
-  font-size: 15px;
+.Recipe-Prepare-Info li p {
+  color: grey;
+  font-weight: normal;
 }
 
 .Section {
@@ -91,17 +93,14 @@ ul {
   font-size: 18px;
 }
 
-.unlist li {
-  font-size: 11.5px;
-  color: grey;
-  margin-block-start: 10px;
+.unlist ul {
+  color: #9e583c;
 }
 
-.unlist li::before {
-  content: "▪";
-  margin-right: 10px;
-  color: #9e583c;
+.unlist li {
+  margin-left: 20px;
   font-size: 12px;
+  margin-block: 3px;
 }
 
 hr {
@@ -112,20 +111,81 @@ hr {
   height: 1px;
 }
 
-table {
-  width: 100%;
-  font-size: 12px;
-  color: grey;
-}
-
-.value {
-  font-weight: bold;
-  color: #9e583c;
-}
-
 .orlist ol {
   color: #9e583c;
   font-weight: bold;
   margin-left: 15px;
   font-size: 12px;
+}
+
+.orlist p {
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.name {
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  font-size: 12px;
+  color: grey;
+}
+.value {
+  font-weight: bold;
+  color: #9e583c;
+}
+
+table hr {
+  margin-block: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 0;
+    padding-block: 1em;
+    margin-top: 20em;
+  }
+
+  .details {
+    padding-inline: 20px;
+  }
+
+  .head-image {
+    border-radius: 0;
+  }
+  .Recipe-Prepare-Info li {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16.5px;
+  }
+
+  .unlist p {
+    font-size: 18px;
+  }
+  .unlist li {
+    font-size: 18px;
+  }
+
+  .unlist li::before {
+    font-size: 18px;
+  }
+
+  .orlist ol {
+    font-size: 18px;
+  }
+  .orlist p {
+    font-size: 18px;
+  }
+
+  .Section h4 {
+    font-size: 24px;
+  }
+
+  table {
+    font-size: 18px;
+  }
 }
